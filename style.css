@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root{
+    --high-light-color:#f59e0b;
+    --white-color:#ffff;
+    --light-silver:#cbd5e1;
+    --silver-color:#94a3b8;
+    --light-black:#475569;
+    --dark-black:#0f172a;
+    --svg-bg-light-black:#64748b;
+}
+
+body{
+ height: 100vh;
+ width: 100vw;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: var(--dark-black);
+}
+
+.main-container{
+    height: 350px;
+    width: 380px;
+    /* background-color: var(--light-black); */
+
+    background-image: linear-gradient(#0e7490,#075985);
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+
+    border-radius: 10px;
+
+}
+
+
+/* svg container */
+
+.svg-container{
+    height: 40px;
+    width: 40px;
+    /* margin: 15px; */
+    background-color: var(--svg-bg-light-black);
+    border-radius: 50%;
+
+
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px solid red; */
+
+
+}
+
+.svg-container>img{
+    height: 15px;
+    width: 15px;
+}
+
+
+/* text container */
+
+.text-container{
+
+    /* margin: 15px; */
+   
+
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    /* text-align: justify; */
+    margin-inline: 15px;
+    gap: 1rem;
+
+    
+}
+
+.text-container>.heading-text-container{
+    color: var(--white-color);
+}
+
+.text-container>.para-container{
+    color: var(--light-silver);
+}
+
+
+/* box and box-container */
+
+.rating-boxes-container{
+    display: flex;
+    justify-content:space-around;
+  
+}
+
+.rating-boxes-container>.box{
+    height: 40px;
+    width: 40px;
+    background-color: var(--svg-bg-light-black);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--light-silver)
+
+
+}
+
+/* button */
+
+.button-container{
+    display: flex;
+    justify-content: center;
+
+  
+
+}
+
+.submit{
+    height: 40px;
+    width: 90%;
+
+    border-radius: 20px;
+    font-family: inherit;
+    letter-spacing: 3px;
+    border: none;
+
+    background-color: var(--high-light-color);
+    /* display: flex; */
+    
+}

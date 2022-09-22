@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,51 @@
     <script src="/app.js" defer></script>
     <title>Ratings Interface</title>
 </head>
+
 <body>
     <div class="main-container">
-        <div class="svg-container"></div>
-        <div class="text-container"></div>
-        <div class="rating-boxes-container"></div>
-        <button class="submit">SUBMIT</button>
+        <div class="svg-container">
+            <img src="/images/icon-star.svg" alt="" srcset="">
+        </div>
+        <div class="text-container">
+            <div class="heading-text-container">
+                <h2>
+                    How did we do?
+                </h2>
+            </div>
+            <div class="para-container">
+                <p>
+                    Please let us know how we did with your support request. All feedback is appreciated to help us
+                    improve our offering!
+                </p>
+            </div>
+        </div>
+        <div class="rating-boxes-container">
+            <div class="box-1 box">1</div>
+            <div class="box-2 box">2</div>
+            <div class="box-3 box">3</div>
+            <div class="box-4 box">4</div>
+            <div class="box-5 box">5</div>
+        </div>
+
+        <div class="button-container"> <button class="submit">SUBMIT</button>
+        </div>
     </div>
-    
+
+
+    <!-- Thankyou part that will appear after the rating has been done. -->
+
+    <div class="after-rating-container">
+        <div class="svg-container"></div>
+        <div class="you-selected"></div>
+        <div class="text-container-thankyou">
+            <div class="heading-thankyou">
+                <h1>Thankyou</h1>
+            </div>
+            
+        </div>
+    </div>
+
 </body>
+
 </html>
