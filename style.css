@@ -30,9 +30,9 @@ body{
 .main-container{
     height: 350px;
     width: 380px;
-    /* background-color: var(--light-black); */
+    background-color: var(--light-black);
 
-    background-image: linear-gradient(#0e7490,#075985);
+    /* background-image: linear-gradient(#0e7490,#075985); */
 
     display: flex;
     flex-direction: column;
@@ -112,7 +112,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color:var(--light-silver)
+    color:var(--light-silver);
+    cursor: pointer;
+
+    
 
 
 }
