@@ -8,13 +8,13 @@
 }
 
 :root{
-    --high-light-color:#f59e0b;
+    --high-light-color:#FC7613;
     --white-color:#ffff;
     --light-silver:#cbd5e1;
     --silver-color:#94a3b8;
-    --light-black:#475569;
-    --dark-black:#0f172a;
-    --svg-bg-light-black:#64748b;
+    --light-black:#202630;
+    --dark-black:#141518;
+    --svg-bg-light-black:#2C343C;
 }
 
 body{
@@ -22,9 +22,12 @@ body{
  width: 100vw;
 
  display: flex;
+ /* gap: 4px; */
  justify-content: center;
  align-items: center;
  background-color: var(--dark-black);
+
+ position: relative;
 }
 
 .main-container{
@@ -142,4 +145,104 @@ body{
     background-color: var(--high-light-color);
     /* display: flex; */
     
+}
+
+/* after rating container */
+
+
+.after-rating-container{
+    height: 350px;
+    width: 380px;
+    background-color: var(--light-black);
+
+    /* background-image: linear-gradient(#0e7490,#075985); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+
+    border-radius: 10px;
+    /* position:absolute; */
+
+    
+}
+
+.after-rating-container-active{
+    /* opacity: 0; */
+}
+
+/* svg after rating*/
+
+.after-rating-svg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.after-rating-svg-container>img{
+    height: 95px;
+    width: 130px;
+}
+
+
+/* you selected container */
+
+.you-selected{
+    /* border: 2px solid white; */
+    margin-inline:105px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--svg-bg-light-black);
+
+    border-radius: 13px;
+}
+
+.you-selected>h3{
+    font-size: 14px;
+    padding: 6px 2px;
+    color: var(--high-light-color);
+
+}
+
+
+/* thankyou heading */
+
+.heading-thankyou{
+    color: var(--white-color);
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    /* font-style: italic; */
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* thankyou paragraph */
+
+.thankyou-para{
+    margin-top:20px;
+    margin-inline: 30px;
+
+
+
+    /* display: flex; */
+    /* justify-content:center;
+    align-items:center; */
+}
+.thankyou-para>p{
+   
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align: center;
+
+
+    color: var(--light-silver);
+
+    line-height: 22px;
+     
 }
